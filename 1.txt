@@ -1,0 +1,4 @@
+SELECT nome_curso, preco_curso
+FROM tb_cursos
+WHERE preco_curso >= 1000
+ORDER BY preco_curso ASC;

@@ -1,0 +1,4 @@
+SELECT nome_aluno, idade_aluno
+FROM tb_alunos
+WHERE email_aluno is NULL
+ORDER BY nome_aluno ASC;

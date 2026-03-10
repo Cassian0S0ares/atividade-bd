@@ -1,0 +1,4 @@
+SELECT nome_professor
+FROM tb_professores
+WHERE salario_professor >= 5000 AND salario_professor <= 6000
+ORDER BY salario_professor ASC;
