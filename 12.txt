@@ -1,0 +1,5 @@
+#nome do aluno, nome do curso e sua nota
+SELECT a.nome_aluno, c.nome_curso, m.nota_matricula
+FROM tb_matriculas m
+INNER JOIN tb_alunos a ON m.cod_aluno = a.cod_aluno
+INNER JOIN tb_cursos c ON m.cod_curso = c.cod_curso;

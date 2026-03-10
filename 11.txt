@@ -1,0 +1,4 @@
+#cidade e as siglas
+SELECT c.nome_cidade, e.sigla_estado
+FROM tb_cidades c
+INNER JOIN tb_estados e ON c.cod_estado = e.cod_estado;

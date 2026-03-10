@@ -1,0 +1,6 @@
+#nome das cidades que tem mais Alunos
+SELECT c.nome_cidade, COUNT(a.cod_aluno) as total_alunos
+FROM tb_alunos a 
+INNER JOIN tb_cidades c ON a.cod_cidade = c.cod_cidade
+GROUP BY a.cod_cidade
+HAVING COUNT(a.cod_aluno) > 1;
