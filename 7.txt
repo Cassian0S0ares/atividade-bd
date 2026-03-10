@@ -1,0 +1,5 @@
+#Alunos por cidade
+SELECT cod_cidade,
+COUNT(cod_cidade) as total_alunos
+FROM tb_alunos
+GROUP BY cod_cidade;

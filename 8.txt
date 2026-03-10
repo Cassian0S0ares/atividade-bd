@@ -1,0 +1,7 @@
+#selecionando as cidades que tem mais de 1 aluno
+SELECT
+cod_cidade,
+COUNT(cod_aluno) as total_alunos
+FROM tb_alunos
+GROUP BY cod_cidade
+HAVING COUNT(cod_aluno) > 1
