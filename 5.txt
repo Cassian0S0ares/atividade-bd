@@ -1,0 +1,6 @@
+#media salarial por região
+SELECT cod_regiao,
+COUNT(cod_professor) as total_professores,
+AVG(salario_professor) as media_salarial
+FROM tb_professores
+GROUP BY cod_regiao

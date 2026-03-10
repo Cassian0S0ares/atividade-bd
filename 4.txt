@@ -1,0 +1,5 @@
+#media salarial
+SELECT
+COUNT(cod_professor) as total_professores,
+AVG(salario_professor) as media_salaria
+FROM tb_professores;

@@ -1,3 +1,4 @@
+#professores que recebem mais do que 5000 e menos do que 6000
 SELECT nome_professor
 FROM tb_professores
 WHERE salario_professor >= 5000 AND salario_professor <= 6000

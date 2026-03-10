@@ -1,3 +1,4 @@
+# selecionar nome e idade do aluno que não tem email
 SELECT nome_aluno, idade_aluno
 FROM tb_alunos
 WHERE email_aluno is NULL

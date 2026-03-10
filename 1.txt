@@ -1,3 +1,4 @@
+#cursos que custam mais de 1000 reais
 SELECT nome_curso, preco_curso
 FROM tb_cursos
 WHERE preco_curso >= 1000
