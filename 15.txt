@@ -1,0 +1,4 @@
+#filtrando cursos mais caro que o de programação web
+SELECT c.nome_curso, c.preco_curso
+FROM tb_cursos c
+WHERE c.preco_curso > (SELECT preco_curso FROM tb_cursos WHERE nome_curso = 'Programação Web');

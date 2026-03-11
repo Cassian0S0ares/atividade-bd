@@ -1,0 +1,7 @@
+# Quem da aula pra determinado aluno com nome, curso e nome do professor :D 
+SELECT p.nome_professor, a.nome_aluno, c.nome_curso
+FROM tb_matriculas m
+INNER JOIN tb_cursos c ON m.cod_curso = c.cod_curso
+INNER JOIN tb_alunos a ON m.cod_aluno = a.cod_aluno
+INNER JOIN tb_professores p ON m.cod_professor = p.cod_professor
+WHERE nome_aluno = "Carla Oliveira";

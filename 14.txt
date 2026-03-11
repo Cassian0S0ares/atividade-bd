@@ -1,0 +1,4 @@
+#selecionar Alunos com idade maior do que a media de idade
+SELECT nome_aluno, idade_aluno
+FROM tb_alunos
+WHERE idade_aluno > (SELECT AVG(idade_aluno) FROM tb_alunos)
