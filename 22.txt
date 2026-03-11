@@ -1,0 +1,7 @@
+#exemplo de if e else no sql
+SELECT nome_curso, preco_curso,
+	CASE
+    	WHEN preco_curso > 1500 THEN 'Premium'
+        ELSE 'Padrão'
+    END AS categoria_curso
+FROM tb_cursos

@@ -1,0 +1,5 @@
+#mostra todos os alunos com o email.com
+#!anotação esse % é tudo antes daquilo, nesse projeto é tudo antes do email.com
+SELECT nome_aluno, email_aluno
+FROM tb_alunos
+WHERE email_aluno LIKE "%email.com";

@@ -1,0 +1,3 @@
+#codigo para concatenação de itens 
+SELECT CONCAT(nome_aluno, ' - ', idade_aluno, ' anos') as info_aluno
+FROM tb_alunos;

@@ -1,0 +1,5 @@
+#seleciona todos os alunos que se inscreveram no 1 semestre
+#interesante para fazer graficos
+SELECT nome_aluno, data_cadastro_aluno
+FROM tb_alunos
+WHERE MONTH(data_cadastro_aluno) <= 6 AND YEAR(data_cadastro_aluno) = 2025;
