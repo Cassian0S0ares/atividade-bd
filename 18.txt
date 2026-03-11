@@ -1,0 +1,4 @@
+#Vendo o ano de cada cadastro dos usuarios
+SELECT UPPER(nome_aluno) AS nome_maisculo,
+YEAR(data_cadastro_aluno) as ano_cadastro
+FROM tb_alunos;

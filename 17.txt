@@ -1,0 +1,4 @@
+#att email do id 37
+UPDATE tb_alunos
+SET email_aluno = 'ana.novo@email.com'
+WHERE cod_aluno = 37;

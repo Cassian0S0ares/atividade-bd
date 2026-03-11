@@ -1,0 +1,5 @@
+#O aluno que tirou maior nota
+SELECT nome_aluno, nota_matricula
+FROM tb_matriculas m 
+INNER JOIN tb_alunos a on m.cod_aluno = a.cod_aluno
+WHERE m.nota_matricula = (SELECT MAX(nota_matricula) FROM tb_matriculas);
