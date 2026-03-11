@@ -10,4 +10,4 @@ BEGIN
 INSERT INTO tb_cursos (nome_curso, carga_horaria_curso, preco_curso)
 VALUES(p_nome, p_carga, p_preco);
 END $$
-DELIMITER;
+DELIMITER ;
