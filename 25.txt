@@ -1,0 +1,8 @@
+#view para ver os alunos ativos
+CREATE VIEW vw_alunos_ativos AS
+SELECT a.nome_aluno, c.nome_cidade
+FROM tb_alunos a 
+INNER JOIN tb_cidades c ON a.cod_cidade = c.cod_cidade
+WHERE a.ativo_aluno = 1;
+
+#ver a view SELECT * FROM vw_alunos_ativos;

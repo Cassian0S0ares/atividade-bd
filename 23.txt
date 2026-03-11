@@ -1,0 +1,10 @@
+#media do aluno, mostrando nome, nome do curso, nota e se ta aprovado
+SELECT a.nome_aluno, c.nome_curso, m.nota_matricula,
+	CASE
+    	WHEN m.nota_matricula >= 7.0 THEN 'Aprovado'
+        WHEN m.nota_matricula is NULL THEN "Sem Nota"
+        ELSE 'Reprovado'
+    END AS status_aluno
+FROM tb_matriculas m
+INNER JOIN tb_alunos a ON m.cod_aluno = a.cod_aluno
+INNER JOIN tb_cursos c ON m.cod_curso = c.cod_curso;

@@ -1,0 +1,13 @@
+#essa é bem interesante basicamente é um processo que vc adiciona de forma mais rapida os cursos no banco só digitando e acionando essa função
+DELIMITER $$
+
+CREATE PROCEDURE sp_inserir_curso(
+IN p_nome VARCHAR(100),
+IN p_carga INT,
+IN p_preco decimal(10,2)
+)
+BEGIN
+INSERT INTO tb_cursos (nome_curso, carga_horaria_curso, preco_curso)
+VALUES(p_nome, p_carga, p_preco);
+END $$
+DELIMITER;

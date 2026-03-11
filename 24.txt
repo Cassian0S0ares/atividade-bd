@@ -1,0 +1,7 @@
+#aumentar o salario dos professores
+SELECT nome_professor, salario_professor as salario_atual,
+CASE
+	WHEN salario_professor > 5000 THEN salario_professor*1.05
+   	ELSE salario_professor*1.10 
+END AS novo_salario
+FROM tb_professores;

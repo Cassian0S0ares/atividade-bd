@@ -1,0 +1,5 @@
+#cursos caros
+CREATE VIEW vw_cursos_caros AS
+SELECT * 
+FROM tb_cursos
+WHERE preco_curso >= 1000
